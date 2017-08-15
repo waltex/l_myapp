@@ -21,4 +21,12 @@ Route::get('/hello',function(){
 });
 */
 Route::get('/hello/{name}', 'Hello@show');
+Route::get('/hello2', function() {
+    return view('hello2');
+});
+
 //Route::get('hello', '/Hello@index');
+
+Route::get('/home', function() {
+    return view('home');
+});

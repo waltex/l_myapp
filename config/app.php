@@ -164,7 +164,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         //add
         Collective\Html\HtmlServiceProvider::class,
-
         /*
          * Package Service Providers...
          */
