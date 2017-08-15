@@ -44,7 +44,12 @@
                 </div>
                 <div class="">
 
-                  {{ Form::text('first_name') }}
+                  {{Form::number('name', 'value')}}
+                  {{ Form::checkbox('name', 'value', true) }}
+                  {{ Form::select('size', array('L' => 'Large', 'S' => 'Small'), 'S') }}
+                  {{ Form::submit('Click Me!') }}
+                  {{ Log::alert('Ciao') }}
+                  {{ Form::textarea('notes') }}
 
                 </div>
 

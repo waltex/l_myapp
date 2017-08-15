@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
 
 class Hello extends Controller
 {
@@ -49,8 +48,6 @@ class Hello extends Controller
      */
     public function show($name)
     {
-
-
         $users =1;// DB::select('select name from user where id = ?', [1]);
         return view('hello',array('name' => $name,'user'=>$users));
 
