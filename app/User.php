@@ -4,10 +4,13 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Permission\Traits\HasRoles; //add fo scaffold repo
 
 class User extends Authenticatable
 {
     use Notifiable;
+
+use HasRoles; //add fo scaffold repo
 
     /**
      * The attributes that are mass assignable.
